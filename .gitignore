@@ -1,0 +1,8 @@
+#Paket dependency manager
+.paket/
+paket-files/
+[Bb]in
+[Oo]bj
+
+#FAKE
+.fake/
