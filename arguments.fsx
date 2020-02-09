@@ -1,4 +1,4 @@
-#r ".paket/load/netcoreapp3.1/Argu.fsx"
+#load @".paket/load/netcoreapp3.1/Argu.fsx"
 
 open Argu
 
