@@ -1,4 +1,6 @@
-# Configure F# interactive
+# [Argu](https://fsprojects.github.io/Argu/) F# CommandLine parser study
+
+## Configure F# interactive
 
 First, ensure that .NET Core scripting is your default scripting environment:
 
@@ -6,18 +8,18 @@ First, ensure that .NET Core scripting is your default scripting environment:
 1. Search for the term *F# Script*.
 1. Click the checkbox that says *FSharp: use SDK scripts*.
 
-# initialize project (.NET Core 3.0 or higher)
+## initialize project (.NET Core 3.0 or higher)
 ```
 dotnet new tool-manifest
 ```
 
-# Initialize [Paket](http://fsprojects.github.io/Paket/get-started.html) by creating a dependencies file
+## Initialize [Paket](http://fsprojects.github.io/Paket/get-started.html) by creating a dependencies file
 ```
 dotnet tool install paket
 dotnet paket init
 ```
 
-## If you have a build.sh/build.cmd build script, also make sure you add the last two commands before you execute your build:
+### If you have a build.sh/build.cmd build script, also make sure you add the last two commands before you execute your build:
 ```
 dotnet tool restore
 dotnet paket restore
@@ -25,18 +27,18 @@ dotnet paket restore
 ```
 This will ensure Paket works in any .NET Core build environment.
 
-## Make sure to add the following entries to your .gitignore:
+### Make sure to add the following entries to your .gitignore:
 ```
 #Paket dependency manager
 .paket/
 paket-files/
 ```
 
-# Install [FAKE](https://fake.build/fake-gettingstarted.html) as a local dotnet tool (easiest, but needs .NET Core SDK Version 3 or newer)
+## Install [FAKE](https://fake.build/fake-gettingstarted.html) as a local dotnet tool (easiest, but needs .NET Core SDK Version 3 or newer)
 ```
 dotnet tool install fake-cli
 ```
-## Bootstrap via the fake dotnet new template. The template bootstraps FAKE and sets up a basic build-script.
+### Bootstrap via the fake dotnet new template. The template bootstraps FAKE and sets up a basic build-script.
 
 To install the template run:
 ```

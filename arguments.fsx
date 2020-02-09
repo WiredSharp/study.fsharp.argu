@@ -20,3 +20,4 @@ type CliArguments =
             | Detach _ -> "detach daemon from console."
 
 let parser = ArgumentParser.Create<CliArguments>(programName = "gadget.exe")
+
